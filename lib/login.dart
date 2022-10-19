@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class LoginApp extends StatefulWidget {
+class Login extends StatefulWidget {
   @override
-  _LoginAppState createState() => _LoginAppState();
+  _LoginState createState() => _LoginState();
 }
 
-class _LoginAppState extends State<LoginApp> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Login App Example',
+        title: 'Agenda Kegiatan PKBM',
         theme: ThemeData(
             primaryColor: Color(0XFFF9BF3B),
             iconTheme: IconThemeData(color: Color(0XFFF9BF3B)),
@@ -31,7 +31,7 @@ class _LoginAppState extends State<LoginApp> {
                             color: Color(0XFFB3421B))),
                   ),
                   SizedBox(height: 100.0),
-                  Text('Login Your Application',
+                  Text('Masuk dengan akun',
                       style: TextStyle(fontSize: 20.0, color: Colors.black)),
                   SizedBox(height: 20.0),
                   TextFormField(
@@ -42,7 +42,7 @@ class _LoginAppState extends State<LoginApp> {
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                                 color: Color(0XFFC86400), width: 1.0)),
-                        hintText: 'Email Kamu',
+                        hintText: 'Email atau Username',
                         prefixIcon: Icon(Icons.alternate_email,
                             color: Color(0XFFC86400))),
                   ),
@@ -55,7 +55,7 @@ class _LoginAppState extends State<LoginApp> {
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                                 color: Color(0XFFC86400), width: 1.0)),
-                        hintText: 'Password Kamu',
+                        hintText: 'Kata Sandi',
                         prefixIcon: Icon(Icons.lock, color: Color(0XFFC86400))),
                     obscureText: true,
                   ),
@@ -70,7 +70,7 @@ class _LoginAppState extends State<LoginApp> {
                           gradient: LinearGradient(
                               colors: [Color(0XFFF9B32F), Color(0XFFB85400)]),
                           borderRadius: BorderRadius.circular(100.0)),
-                      child: Text('Login',
+                      child: Text('Masuk',
                           textAlign: TextAlign.center,
                           style:
                               TextStyle(color: Colors.white, fontSize: 20.0)),
@@ -94,7 +94,7 @@ class _LoginAppState extends State<LoginApp> {
                       InkWell(
                         onTap: () {},
                         child: Center(
-                          child: Text('Register Sekarang',
+                          child: Text('Daftar Sekarang',
                               style: TextStyle(color: Color(0XFFF9B32F))),
                         ),
                       )
