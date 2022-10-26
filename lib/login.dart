@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project/landing.dart';
+
+import 'Register.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -92,7 +95,10 @@ class _LoginState extends State<Login> {
                       Text('Belum Punya Akun ? '),
                       SizedBox(width: 5.0),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage())
+                          );
+                        },
                         child: Center(
                           child: Text('Daftar Sekarang',
                               style: TextStyle(color: Color(0XFFF9B32F))),
